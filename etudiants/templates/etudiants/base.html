@@ -1,0 +1,22 @@
+ <!DOCTYPE html>
+ {% load static %}
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion Etudiants</title>
+
+    <link rel="stylesheet" href="{% static 'etudiants/css/bootstrap.css' %}">
+
+ </head>
+ <body>
+   <h1 class="text-center alert alert-success">SOYEZ LES BIEN VENUS</h1>
+    <div class="container mt-5">
+        <h2 class="text-center alert alert-danger">Fonction CRUD Basée sur la Gestion Des Etudiants</h2>
+        {%  block content %}  {% endblock%}
+    </div>
+    <script src="{% static 'etudiants/js/jquery.js' %}"></script>
+    <script src="{% static 'etudiants/js/bootstrap.js' %}"></script>
+    <script src="{% static 'etudiants/js/popper.js' %}"></script>
+ </body>
+ </html>
